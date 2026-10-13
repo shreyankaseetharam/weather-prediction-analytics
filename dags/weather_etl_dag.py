@@ -139,7 +139,7 @@ with DAG(
             "last_date": daily_data["time"][-1],
         }
 
-        @task
+    @task
     def load_weather_to_snowflake(payload: dict):
         """Load one city's weather data into Snowflake idempotently."""
 
