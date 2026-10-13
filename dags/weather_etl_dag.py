@@ -30,8 +30,7 @@ with DAG(
     catchup=False,
     default_args={
         "owner": "shreyanka",
-        "retries": 2,
-        "retry_delay": timedelta(minutes=2),
+        "retries": 0,
     },
     tags=["weather", "open-meteo", "etl"],
 ) as dag:
